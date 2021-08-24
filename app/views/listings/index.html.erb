@@ -1,4 +1,4 @@
+<p><%= link_to "Create a new listing", new_listing_path %></p>
 <% @listings.each do |listing| %>
   <h2><%= link_to listing.title, listing_path(listing) %></h2>
 <% end  %>
-
