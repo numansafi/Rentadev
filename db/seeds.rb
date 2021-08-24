@@ -6,41 +6,36 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 User.create!(
-  name: 'John Lithgow',
-  email: 'john.lithgow@gmail.com'
+  first_name: 'John',
+  last_name: 'Lithgow',
+  email: 'john.lithgow@gmail.com',
+  password: '999999'
 )
 
 User.create!(
-  name: 'Adam Armstrong',
-  email: 'adam.armstrong@gmail.com'
+  first_name: 'Adam',
+  last_name: 'Armstrong',
+  email: 'adam.armstrong@gmail.com',
+  password: '999999'
 )
 
 User.create!(
-  name: 'Fraser Forster',
-  email: 'fraser.forster@gmail.com'
+  first_name: 'Fraser',
+  last_name: 'Forster',
+  email: 'fraser.forster@gmail.com',
+  password: '999999'
 )
 
 User.create!(
-  name: 'Ellie Sharp',
-  email: 'ellie.sharp@gmail.com'
+  first_name: 'Ellie',
+  last_name: 'Sharp',
+  email: 'ellie.sharp@gmail.com',
+  password: '999999'
 )
 
 User.create!(
-  name: 'Dan Theman',
-  email: 'dan.theman@gmail.com'
-)
-
-User.create!(
-  name: 'Liam Neeson',
-  email: 'liam.neeson@gmail.com'
-)
-
-User.create!(
-  name: 'James McAvoy',
-  email: 'james.mcavoy@gmail.com'
-)
-
-User.create!(
-  name: 'Harry Trotter',
-  email: 'harry.trotter@gmail.com'
+  first_name: 'Dan',
+  last_name: 'Theman',
+  email: 'dan.theman@gmail.com',
+  password: '999999'
 )
