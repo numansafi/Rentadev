@@ -1,4 +1,8 @@
 <h2><%= @listing.title %></h2>
 <hr>
+<span><%= link_to "Edit", edit_listing_path %></span>
+<span>
+  <%= link_to "Delete", listing_path(@listing), method: :delete, data: {confirm: "Are you sure?"}  %>
+</span>
 <p>Description:<%= @listing.description %></p>
 <p>Price: £<%= @listing.price %> </p>
