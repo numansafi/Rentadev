@@ -8,7 +8,6 @@ class ListingsController < ApplicationController
   def show
   end
 
-
   private
 
   def set_listing
