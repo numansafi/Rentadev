@@ -2,5 +2,5 @@ class Booking < ApplicationRecord
   belongs_to :user
   belongs_to :listing
 
-  validates :datetime, presence: true
+  validates :date, presence: true
 end
