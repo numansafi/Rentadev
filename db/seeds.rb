@@ -19,8 +19,8 @@ Listing.destroy_all
   user.save!
   Listing.create!(
     user: user,
-    title: Faker::Lorem.sentence(word_count: 3),
-    description: Faker::Lorem.paragraph(sentence_count: 2),
+    title: Faker::ProgrammingLanguage.name,
+    description: Faker::Quotes::Shakespeare.as_you_like_it_quote,
     price: rand(0..100)
   )
 end
