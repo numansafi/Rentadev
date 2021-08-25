@@ -4,5 +4,6 @@
 <span>
   <%= link_to "Delete", listing_path(@listing), method: :delete, data: {confirm: "Are you sure?"}  %>
 </span>
+<span><%= link_to "Back", listings_path %></span>
 <p>Description:<%= @listing.description %></p>
 <p>Price: £<%= @listing.price %> </p>
