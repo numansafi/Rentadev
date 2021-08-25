@@ -18,11 +18,19 @@
   width: 400px;
   background-color: rgb(95, 94, 109);
   border-radius: 10px;
-  height: 200px;
+  height: 400px;
+  margin-left: 30px;
+  padding:20px;
+  h3 {
+    text-align: left;
+  }
+  p {
+    text-align: left;
+  }
 }
 .card {
   border-radius: 10px;
 }
 .cards {
-  margin-left: 20px ;
+  margin-left: 70px;
 }
