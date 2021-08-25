@@ -1,0 +1,5 @@
+<%= simple_form_for [ @listing, @user ,@booking ] do |f| %>
+  <%= f.association :listing %>
+  <%= f.input :date %>
+  <%= f.submit %>
+<% end %>
