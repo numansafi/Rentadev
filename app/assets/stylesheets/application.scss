@@ -11,3 +11,25 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: #FCF3DF;
+}
+
+h1, h2, h4 {
+  font-family: 'Patua One', cursive;
+}
+
+h5, p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #C18B73;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #dfbcad ;
+}
