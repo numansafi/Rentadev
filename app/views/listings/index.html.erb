@@ -1,4 +1,22 @@
-<p><%= link_to "Create a new listing", new_listing_path %></p>
-<% @listings.each do |listing| %>
-  <h2><%= link_to listing.title, listing_path(listing) %></h2>
-<% end  %>
+<a><%= link_to "Create a new listing", new_listing_path %></a>
+
+<div class="main-container p-3 m-3">
+  <% @listings.each do |listing| %>
+    <%# <div class="row col-4"> %>
+      <div class="index-card">
+        <%# #img tag with description %>
+        <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="listing-tutor">
+        <div class="index-card-content">
+          <h2> <%= "#{listing.user.first_name} #{listing.user.last_name}" %></h2>
+          <h3> <%= listing.title %></h3>
+          <div class="index-card-flex">
+            <p> <%= listing.price %> </p>
+            <p><%= link_to listing.title, listing_path(listing) %></p>
+          </div>
+        </div>
+      </div>
+   <%# </div> %>
+  <% end %>
+</div>
+
+        <%# <div class="card-flex"><p>£20ph</p><button>Book Now</button></div> %>
