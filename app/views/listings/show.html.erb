@@ -8,19 +8,29 @@
 <p>Description:<%= @listing.description %></p>
 <p>Price: £<%= @listing.price %> </p>
 
-<div class="flexbox">
-  <div class="cards-show">
-    <%# changed cards class to cards show, do not change, see _show.scss -Max  %>
-    <div class="card">
-      <img src="https://constructionmaguk.co.uk/wp-content/uploads/2018/06/do-developer-profile.png" class="img-card" alt="picture man">
-        <h2>Dan Sterling</h2>
-        <p>BA computer science</p>
-    <div class="card-flex"><p>£20ph</p><button>book now</button></div>
-  </div>
-    <div class="cardtwo">
-      <h3>name</h3>
-      <p>something about qualifications</p>
-      <button>push</button>
-      <button>push</button>
+
+<div class="cardtwo">
+  <div class="flexbox">
+    <div class="index-card">
+        <%# #img tag with description %>
+        <img src="https://constructionmaguk.co.uk/wp-content/uploads/2018/06/do-developer-profile.png" class="img-card" alt="picture man">
+        <div class="index-card-content">
+          <h2> <%= "#{@listing.user.first_name} #{@listing.user.last_name}" %></h2>
+          <h3> <%= @listing.title %></h3>
+          <div class="index-card-flex">
+            <p> <%= @listing.price %> </p>
+            <p><%= link_to @listing.title, listing_path(@listing) %></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-details" >
+        <h3>name</h3>
+        <p>something about qualifications</p>
+        <div class="card-buttons">
+        <button>push</button>
+        <button>push</button>
+        </div>
+      </div>
     </div>
   </div>
+</div>
