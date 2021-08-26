@@ -1,40 +1,108 @@
-.cards {
+.home-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  padding: 16px;
 }
+
+.home-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-card {
+  // border: 5px solid #1C6EA4;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+  background-color: #BFC0AA;
+  border-radius: 5px;
+  width: 300px;
+  height: 350px;
+  img {
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 12px;
+  }
+}
+
+.home-card-content {
+  flex-grow: 1;
+}
+
+.home-card-content {
+  h2 {
+    text-align: left;
+    margin-left: 11px;
+    color: $cream;
+  }
+}
+
+.home-card-content {
+  p {
+    flex: center;
+    color: $cream;
+    margin-left: 11px;
+  }
+}
+
+.home-card-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card-book-button {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.card-book-button:hover {
+  opacity: 1;
+  color:rgb(149, 229, 193)8;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
-  .cards {
+  .home-cards {
     grid-template-columns: 1fr;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .cards {
+  .home-cards {
     grid-template-columns: 1fr;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .cards {
+  .home-cards {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .cards {
+  .home-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .cards {
+  .home-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -100,3 +168,17 @@
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
 }
+
+#our-tutors-header {
+  text-align: left;
+  margin-top: 28px;
+  margin-bottom: 16px;
+  margin-left: 1px;
+  // padding: 39px;
+  color: $maroony;
+}
+
+// .home-cards-container {
+//   margin: none;
+//   padding: 20px;
+// }
