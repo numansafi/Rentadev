@@ -24,7 +24,7 @@
           <h5> <%= listing.title %></h5>
           <div class="index-card-flex">
             <h6> £<%= listing.price %>/ph </h6>
-            <%= link_to "Book Now", listing_path(listing), class: "btn btn-gradient"  %>
+            <%= link_to "Book Now", new_listing_booking_path(listing), class: "btn btn-gradient"  %>
           </div>
         </div>
       <% end %>
