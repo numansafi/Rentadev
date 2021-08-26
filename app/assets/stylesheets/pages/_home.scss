@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  padding: 16px;
+  padding: 32px;
 }
 
 .home-cards {
@@ -32,44 +32,54 @@
 }
 
 .home-card-content {
-  h2 {
-    text-align: left;
-    margin-left: 11px;
-    color: $cream;
-  }
-}
-
-.home-card-content {
-  p {
-    flex: center;
-    color: $cream;
-    margin-left: 11px;
-  }
+  margin-left: 16px;
+    h2 {
+      text-align: left;
+      color: $cream;
+    }
+    p {
+      flex: center;
+      color: $cream;
+    }
+    h5 {
+      color: $cream;
+    }
+    h6 {
+      margin-top: 10px;
+      font-family: 'Patua One', cursive;
+      color: $dark-navy;
+      font-weight: bold;
+      font-size: 19px;
+      text-shadow: 1px 0.15px rgba(122,120,117,0.43)
+    }
 }
 
 .home-card-flex {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 18px 18px 18px 2px;
+  margin-top: 9px;
 }
 
 .card-book-button {
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #1EDD88;
+  font-weight: bold;
+  background: $sea-blue;
   transition: background 0.3s ease;
+  border: 1px solid $sea-blue;
 }
 
 .card-book-button:hover {
-  opacity: 1;
-  color:rgb(149, 229, 193)8;
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
   text-decoration: none;
 }
 
-p {
-  font-size: 16px;
-}
+// p {
+//   font-size: 16px;
+// }
 
 
 // Smallest device
@@ -128,7 +138,7 @@ p {
 }
 
 .footer {
-  background: #F4F4F4;
+  background: $sea-blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -159,9 +169,9 @@ p {
   padding: 8px 24px;
   border-radius: 4px;
   font-weight: bold;
-  background: linear-gradient(#167FFB, #0F60C4);
+  background: $sea-blue;
   transition: background 0.3s ease;
-  border: 1px solid #0F60C4;
+  border: 1px solid $sea-blue;
 }
 
 .btn-gradient:hover {
@@ -173,9 +183,38 @@ p {
   text-align: left;
   margin-top: 28px;
   margin-bottom: 16px;
-  margin-left: 1px;
+  margin-left: 79px;
   // padding: 39px;
   color: $maroony;
+}
+
+#how-header {
+    text-align: center;
+    padding-bottom: 24px;
+    font-weight: bold;
+    color: $maroony;
+}
+
+.how-it-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 0px 10px;
+  img {
+    height: 242px;
+    border-radius: 20px;
+  }
+}
+
+.how-it-card-info {
+  text-align: center;
+  margin-top: 24px;
+  color: $dark-navy;
+}
+
+.how-it-cards-container {
+  padding: 32px;
 }
 
 // .home-cards-container {
