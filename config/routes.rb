@@ -6,6 +6,5 @@ Rails.application.routes.draw do
     resources :bookings, except: [:destroy]
   end
 
-resources :bookings, only: [:destroy]
-
+  resources :bookings, only: [:destroy]
 end
