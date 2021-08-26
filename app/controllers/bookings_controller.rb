@@ -1,6 +1,7 @@
 class BookingsController < ApplicationController
 
-  before_action :set_booking, only: [:show]
+  before_action :set_booking, only: [:show, :edit, :update]
+  before_action :set_listing, only: [:new, :create, :edit]
 
   def index
     @bookings = Booking.all
@@ -10,13 +11,11 @@ class BookingsController < ApplicationController
   end
 
   def new
-    @listing = Listing.find(params[:listing_id])
     @booking = Booking.new
   end
 
   def create
     @booking = Booking.new(booking_params)
-    @listing = Listing.find(params[:listing_id])
     @booking.listing = @listing
     @booking.user = current_user
     if @booking.save
@@ -26,10 +25,22 @@ class BookingsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    @booking.update(booking_params)
+    redirect_to listing_bookings_path
+  end
+
   private
 
   def set_booking
     @booking = Booking.find(params[:id])
+  end
+
+  def set_listing
+    @listing = Listing.find(params[:listing_id])
   end
 
   def booking_params
