@@ -6,7 +6,6 @@
 }
 .flexbox {
   display: flex;
-  justify-content: space-between;
 
 }
 .img-card {
@@ -15,18 +14,12 @@
   object-fit: cover;
 }
 .cardtwo {
-  width: 400px;
+  width: 1000px;
   background-color: rgb(95, 94, 109);
   border-radius: 10px;
   height: 400px;
-  margin-left: 30px;
+  margin: 0 auto;
   padding:20px;
-  h3 {
-    text-align: left;
-  }
-  p {
-    text-align: left;
-  }
 }
 .card {
   border-radius: 10px;
@@ -35,4 +28,25 @@
 // There were two div classes called cards, so I had to change the one for the show page to cards-show. This is why the home page cards were pushed to the right - Max
 .cards-show {
   margin-left: 70px;
+}
+.card-details {
+  text-align: left;
+  margin-left: 20px;
+}
+.card-buttons {
+  position: absolute;
+  bottom: -18px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  .card-button:hover {
+  background-color: #4CAF50; /* Green */
+  color: rgb(136, 188, 223);
+}
+.card-button {
+  transition-duration: 0.4s;
+}
 }
