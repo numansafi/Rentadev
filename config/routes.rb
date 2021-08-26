@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :listings do
     resources :bookings, except: [:destroy]
   end
-
-resources :bookings, only: [:destroy]
+  resources :bookings, only: [:destroy]
+  get '/my_bookings', to: 'bookings#my_bookings'
 
 end

@@ -1,0 +1,7 @@
+<h2>My bookings</h2>
+<h2><% @bookings.each do |booking| %></h2>
+  <%= booking.listing.title %>
+  <p><%= booking.startdate %></p>
+  <%= link_to "Edit", edit_listing_booking_path(booking.listing.id, booking)%>
+  <%= link_to "Delete", booking_path(booking), method: :delete, data: {confirm: "Are you sure?"}%>
+<% end  %>
