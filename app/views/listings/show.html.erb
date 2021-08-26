@@ -1,12 +1,5 @@
 <h2><%= @listing.title %></h2>
-<hr>
-<span><%= link_to "Edit", edit_listing_path %></span>
-<span>
-  <%= link_to "Delete", listing_path(@listing), method: :delete, data: {confirm: "Are you sure?"}  %>
-</span>
-<span><%= link_to "Back", listings_path %></span>
-<p>Description:<%= @listing.description %></p>
-<p>Price: £<%= @listing.price %> </p>
+
 
 
 <div class="cardtwo">
@@ -26,11 +19,16 @@
       <div class="card-details" >
         <h3>name</h3>
         <p>something about qualifications</p>
-        <div class="card-buttons">
-        <button>push</button>
-        <button>push</button>
+        <p>Description:<%= @listing.description %></p>
+        <p>Price: £<%= @listing.price %> </p>
+        <div class="index-card-buttons">
+          <span><%= link_to "Edit", edit_listing_path , class: "btn btn-gradient" %></span>
+          <span>
+          <%= link_to "Delete", listing_path(@listing), class: "btn btn-gradient", method: :delete, data: {confirm: "Are you sure?"}  %>
+          </span>
         </div>
       </div>
     </div>
+<span><%= link_to "Back", listings_path, class: "btn btn-back btn-gradient" %></span>
   </div>
 </div>
