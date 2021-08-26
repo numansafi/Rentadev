@@ -1,6 +1,12 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
 <%= simple_form_for(listing) do |f| %>
-  <%= f.input :title%>
-  <%= f.input :description %>
-  <%= f.input :price %>
-  <%= f.submit %>
+  <%= f.input :title, label: 'What coding languages can you teach?'%>
+  <%= f.input :description, label: 'Tell us about your qualifications' %>
+  <%= f.input :price,  label: 'How much do you charge per hour?' %>
+  <%= f.submit 'Create Tutor Profile', class: 'btn-gradient' %>
 <% end %>
+    </div>
+  </div>
+</div>
