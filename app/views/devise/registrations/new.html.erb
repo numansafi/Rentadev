@@ -1,6 +1,22 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1580894736036-7a68513983ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);">
+    <div id ="sign-up-banner" class="container">
+      <h1><strong>Sign Up</strong></h1>
+      <p>Join our community of programmers</p>
+      <%# <div class="input-group rounded">
+      <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+      aria-describedby="search-addon" />
+      <span class="input-group-text border-0" id="search-addon">
+      <i class="fas fa-search"></i>
+      </span> %>
+      <%# <%= link_to "Browse tutors", listings_path, class: "btn btn-gradient" %> %>
+    </div>
+    </div>
+</div>
+
+
 <div class="conatiner">
   <div class="row justify-content-center">
-    <div class="col-6">
+    <div id="sign-up-cont" class="col-6">
       <h2 id="sign-up-header">Sign up</h2>
 
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
