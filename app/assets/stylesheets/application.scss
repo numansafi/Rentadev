@@ -29,7 +29,8 @@ a {
   font-family: 'Montserrat', sans-serif;
 }
 
-a:hover {
-  text-decoration: none;
-  color: #dfbcad ;
-}
+// a:hover {
+//   text-decoration: none;
+//   color: #dfbcad ;
+// }
+// Uncommented the link element as it was overriding the buttons, need to confirm specificity with TA

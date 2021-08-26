@@ -24,7 +24,9 @@
 .card {
   border-radius: 10px;
 }
-.cards {
+
+// There were two div classes called cards, so I had to change the one for the show page to cards-show. This is why the home page cards were pushed to the right - Max
+.cards-show {
   margin-left: 70px;
 }
 .card-details {
