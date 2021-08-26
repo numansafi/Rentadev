@@ -30,6 +30,15 @@
   }
 }
 
+.index-card:hover {
+  transform: scale(1.06);
+  transition: transform 330ms ease-in-out;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
+}
+
 .index-card-content {
  flex-grow: 1;
 }
