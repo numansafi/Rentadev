@@ -1,5 +1,5 @@
 <h2>My bookings</h2>
 <h2><% @bookings.each do |booking| %></h2>
   <%= booking.listing.title %>
-  <p><%= booking.date %></p>
+  <p><%= booking.startdate %></p>
 <% end  %>
