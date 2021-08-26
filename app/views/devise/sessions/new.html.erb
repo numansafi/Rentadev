@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-6">
-      <h2>Log in</h2>
+      <h2 class="login-header">Log in</h2>
 
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form-inputs">
@@ -15,11 +15,12 @@
         <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
       </div>
 
-      <div class="form-actions" >
-        <%= f.button :submit, "Log in"%>
+      <div id="login-btn" class="form-actions" >
+        <%= f.button :submit, "Log in", class: "btn-gradient" %>
       </div>
     <% end %>
 
+    <h4 id="h4-sign-up">Not signed up?</h4>
     <%= render "devise/shared/links" %>
 
     </div>
