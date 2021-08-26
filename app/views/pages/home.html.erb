@@ -6,14 +6,10 @@
     <div class="container">
       <h1><strong>Rent-a-Dev</strong></h1>
       <p>Find your coding tutor today</p>
-      <%# <div class="input-group rounded">
-      <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-      aria-describedby="search-addon" />
-      <span class="input-group-text border-0" id="search-addon">
-      <i class="fas fa-search"></i>
-      </span> %>
-      <%= link_to "Browse tutors", listings_path, class: "btn btn-gradient" %>
-    </div>
+    <%#---------- Code for serach bar--------- %>
+      <%= render "shared/searchbar" %>
+    <%#---------- Code for serach bar--------- %>
+      <%# <%= link_to "Browse tutors", listings_path, class: "btn btn-gradient" %>
     </div>
   </div>
 
