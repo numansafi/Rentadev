@@ -1,7 +1,7 @@
 <div class="conatiner">
   <div class="row justify-content-center">
     <div class="col-6">
-      <h2>Sign up</h2>
+      <h2 id="sign-up-header">Sign up</h2>
 
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= f.error_notification %>
@@ -31,10 +31,26 @@
         </div>
       <% end %>
 
-      <h2>Already signed up?</h2>
+      <h4 id="h4-sign-up">Already signed up?</h4>
+      <div id="login-sign-up"><%= render "devise/shared/links" %></div>
+
 
       <%# <div id="login-btn">
         <%= render "devise/shared/links" %>
     </div>
   </div>
 </div>
+
+  <div id="sign-up-footer" class="footer">
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+      Rent-a-Dev <i class="fas fa-terminal"></i>
+    </div>
+  </div>
+</body>
