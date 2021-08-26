@@ -38,6 +38,10 @@ class BookingsController < ApplicationController
     redirect_to listing_bookings_path(@booking.listing.id)
   end
 
+  def my_bookings
+    @bookings = Booking.where(user: current_user)
+  end
+
   private
 
   def set_booking
