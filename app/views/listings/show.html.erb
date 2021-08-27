@@ -1,34 +1,42 @@
-<h2><%= @listing.title %></h2>
+<h1><%= "#{@listing.user.first_name} #{@listing.user.last_name}" %></h1>
 
 
-
-<div class="cardtwo">
-  <div class="flexbox">
-    <div class="index-card">
-        <%# #img tag with description %>
-        <img src="https://constructionmaguk.co.uk/wp-content/uploads/2018/06/do-developer-profile.png" class="img-card" alt="picture man">
-        <div class="index-card-content">
-          <h2> <%= "#{@listing.user.first_name} #{@listing.user.last_name}" %></h2>
-          <h3> <%= @listing.title %></h3>
-          <div class="index-card-flex">
-            <p> <%= @listing.price %> </p>
-            <p><%= link_to @listing.title, listing_path(@listing) %></p>
-          </div>
-        </div>
-      </div>
-      <div class="card-details" >
-        <h3>name</h3>
-        <p>something about qualifications</p>
-        <p>Description:<%= @listing.description %></p>
-        <p>Price: £<%= @listing.price %> </p>
-        <div class="index-card-buttons">
-          <span><%= link_to "Edit", edit_listing_path , class: "btn btn-gradient" %></span>
-          <span>
-          <%= link_to "Delete", listing_path(@listing), class: "btn btn-gradient", method: :delete, data: {confirm: "Are you sure?"}  %>
-          </span>
-        </div>
+<div class="show-container">
+  <div class="index-card">
+    <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="listing-tutor">
+    <div class="index-card-content">
+      <h2> <%= "#{@listing.user.first_name} #{@listing.user.last_name}" %></h2>
+      <h5> <%= @listing.title %></h5>
+      <div class="index-card-flex">
+        <h6> £<%= @listing.price %>/ph </h6>
+        <%= link_to "Book Now", new_listing_booking_path(@listing), class: "btn btn-gradient"  %>
       </div>
     </div>
-<span><%= link_to "Back", listings_path, class: "btn btn-back btn-gradient" %></span>
+  </div>
+  <div class="show-info-right-box">
+    <div class="show-details box">
+    <h2> <%= "Hi, I'm #{@listing.user.first_name}!"</h2>
+    <h3> "#{@listing.user.description}" %></h3>
+    </div>
+    <div class="show-buttons-box">
+    </div>
   </div>
 </div>
+
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    Rent-a-Dev <i class="fas fa-terminal"></i>
+  </div>
+</div>
+
+<%# <%= link_to "Delete", listing_path(@listing), class: "btn btn-gradient", method: :delete, data: {confirm: "Are you sure?"}  %>
+<%# <span><%= link_to "Edit", edit_listing_path , class: "btn btn-gradient"</span> %>
+<%# <span><%= link_to "Back", listings_path, class: "btn btn-back btn-gradient"</span> %>

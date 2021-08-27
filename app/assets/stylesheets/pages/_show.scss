@@ -1,3 +1,20 @@
+h1 {
+  color: $maroony;
+  text-align: center;
+}
+
+.show-container {
+  padding: 80px;
+  display: flex;
+  flex: space-between;
+  border: 5px solid #1C6EA4;
+}
+
+.show-info-right-box {
+  border: 5px solid #1C6EA4;
+}
+
+
 .cardshow {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
