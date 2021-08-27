@@ -19,7 +19,7 @@ class BookingsController < ApplicationController
     @booking.listing = @listing
     @booking.user = current_user
     if @booking.save
-      redirect_to listing_bookings_path
+      redirect_to my_bookings_path
     else
       render :new
     end
@@ -30,12 +30,12 @@ class BookingsController < ApplicationController
 
   def update
     @booking.update(booking_params)
-    redirect_to listing_bookings_path(@booking.listing.id)
+    redirect_to my_bookings_path
   end
 
   def destroy
     @booking.destroy
-    redirect_to listing_bookings_path(@booking.listing.id)
+    redirect_to my_bookings_path
   end
 
   def my_bookings
