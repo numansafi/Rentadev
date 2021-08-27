@@ -1,3 +1,45 @@
+h1 {
+  color: $maroony;
+  text-align: center;
+}
+
+h2, h3, h5 {
+  padding-top: 15px;
+  color: $dark-navy;
+}
+
+
+.show-container {
+  display: flex;
+  // border: 5px solid #1C6EA4;
+  justify-content: space-around;
+  padding: 80px;
+  margin-left:6px
+}
+
+.show-info-right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.show-buttons-box {
+  display: flex;
+  justify-content: space-around ;
+  flex-direction: row;
+  padding: 5px;
+  align-items: flex-start;
+}
+
+.show-buttons-space {
+  padding: 5px;
+}
+
+.show-details-box {
+  padding-top: 52px;
+}
+
 .cardshow {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -33,14 +75,20 @@
   text-align: left;
   margin-left: 10px;
 }
-.index-card-flex {
-  position: relative; top: -15px;
+.show-page-card-flex {
+  position: relative; top: px;
 }
-.btn-back {
-  position: relative;
-  bottom: -40px;
-  left: -20px;
-}
+// .btn-back {
+//   position: relative;
+//   bottom: -40px;
+//   left: -20px;
+
 .index-card-buttons {
   position: relative; top: 9rem;
+}
+
+#showbtn:hover {
+  transform: scale(1.06);
+  transition: transform 330ms ease-in-out;
+  text-decoration: none;
 }

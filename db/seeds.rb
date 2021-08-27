@@ -5,9 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require "open-uri"
 puts "Seeding starting"
 User.destroy_all
 Listing.destroy_all
+
 
 # 10.times do
 #   user = User.new(
@@ -37,7 +40,24 @@ user_queen = User.create!(email: "thequeen@mail.com", password: "123456", first_
 
 van = Listing.create!(title: "The Starry Night - Vincent van Gogh", user: user_queen, description: "artist", price: 10.1)
 van.photo.attach(io: URI.open('https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U'), filename: "van.jpg", content_type: "image/jpg")
-puts "Seeding finished!"
+
+# 5.times do
+#   user = User.new(
+#     first_name: Faker::Name.first_name,
+#     last_name: Faker::Name.last_name,
+#     email: Faker::Internet.email,
+#     password: "password"
+#   )
+#   user.save!
+#   Listing.create!(
+#     user: user,
+#     title: Faker::ProgrammingLanguage.name,
+#     description: Faker::Quotes::Shakespeare.as_you_like_it_quote,
+#     price: rand(0..100)
+#   )
+# end
+
+# puts "Seeding finished!"
 
 # User.create!(
 #   first_name: 'John',
