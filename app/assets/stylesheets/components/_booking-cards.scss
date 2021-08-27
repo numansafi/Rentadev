@@ -25,7 +25,7 @@ display: flex;
 
 .booking-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   padding: 32px;
 }
@@ -34,6 +34,7 @@ display: flex;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .booking-cardshow {
@@ -41,4 +42,27 @@ display: flex;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 
+}
+
+.booking-card-content {
+  margin-left: 5px;
+    h2 {
+      text-align: left;
+      color: $cream;
+    }
+    p {
+      flex: center;
+      color: $cream;
+    }
+    h5 {
+      color: $cream;
+    }
+    h6 {
+      margin-top: 10px;
+      font-family: 'Patua One', cursive;
+      color: $dark-navy;
+      font-weight: bold;
+      font-size: 19px;
+      text-shadow: 1px 0.15px rgba(122,120,117,0.43)
+    }
 }
