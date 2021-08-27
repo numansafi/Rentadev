@@ -8,8 +8,9 @@
 
 require "open-uri"
 puts "Seeding starting"
-User.destroy_all
 Listing.destroy_all
+User.destroy_all
+
 
 
 # 10.times do
