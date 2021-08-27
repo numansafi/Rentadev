@@ -6,15 +6,15 @@
 }
 
 .home-cards {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .home-card {
   // border: 5px solid #1C6EA4;
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
-  background-color: #BFC0AA;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.25);
+  background-color: #bfc0aa;
   border-radius: 5px;
   width: 300px;
   height: 350px;
@@ -26,8 +26,6 @@
     border-radius: 12px;
   }
 }
-
-
 
 .home-card:hover {
   transform: scale(1.06);
@@ -44,25 +42,25 @@
 
 .home-card-content {
   margin-left: 16px;
-    h2 {
-      text-align: left;
-      color: $cream;
-    }
-    p {
-      flex: center;
-      color: $cream;
-    }
-    h5 {
-      color: $cream;
-    }
-    h6 {
-      margin-top: 10px;
-      font-family: 'Patua One', cursive;
-      color: $dark-navy;
-      font-weight: bold;
-      font-size: 19px;
-      text-shadow: 1px 0.15px rgba(122,120,117,0.43)
-    }
+  h2 {
+    text-align: left;
+    color: $cream;
+  }
+  p {
+    flex: center;
+    color: $cream;
+  }
+  h5 {
+    color: $cream;
+  }
+  h6 {
+    margin-top: 10px;
+    font-family: "Patua One", cursive;
+    color: $dark-navy;
+    font-weight: bold;
+    font-size: 19px;
+    text-shadow: 1px 0.15px rgba(122, 120, 117, 0.43);
+  }
 }
 
 .home-card-flex {
@@ -83,7 +81,7 @@
 }
 
 .card-book-button:hover {
-  background: linear-gradient(#147EFF, #0F67DA);
+  background: linear-gradient($blue, $blue);
   color: white;
   text-decoration: none;
 }
@@ -91,7 +89,6 @@
 // p {
 //   font-size: 16px;
 // }
-
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
@@ -136,7 +133,7 @@
 .banner h1 {
   margin: 0;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   font-size: 56px;
   font-weight: bold;
 }
@@ -144,8 +141,8 @@
 .banner p {
   font-size: 40px;
   color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  opacity: 0.7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
@@ -155,7 +152,7 @@
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 .footer-links {
   display: flex;
@@ -172,7 +169,7 @@
   opacity: 1;
 }
 .footer .fa-heart {
-  color: #D23333;
+  color: #d23333;
 }
 
 .btn-gradient {
@@ -186,7 +183,7 @@
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(#147EFF, #0F67DA);
+  background: linear-gradient($blue, $blue);
   color: white;
 }
 
@@ -200,10 +197,10 @@
 }
 
 #how-header {
-    text-align: center;
-    padding-bottom: 24px;
-    font-weight: bold;
-    color: $maroony;
+  text-align: center;
+  padding-bottom: 24px;
+  font-weight: bold;
+  color: $maroony;
 }
 
 .how-it-cards {
