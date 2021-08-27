@@ -5,11 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require "open-uri"
 puts "Seeding starting"
 User.destroy_all
 Listing.destroy_all
 
-10.times do
+5.times do
+  file = URI.open('https://thispersondoesnotexist.com/image')
   user = User.new(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
@@ -17,6 +20,7 @@ Listing.destroy_all
     password: "password"
   )
   user.save!
+  user.avatar.attach(io: file, filename: 'user.png', content_type: 'image/png')
   Listing.create!(
     user: user,
     title: Faker::ProgrammingLanguage.name,
@@ -24,7 +28,6 @@ Listing.destroy_all
     price: rand(0..100)
   )
 end
-
 puts "Seeding finished!"
 # User.create!(
 #   first_name: 'John',
