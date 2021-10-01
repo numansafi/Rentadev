@@ -1,1 +1,3 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+**RentaDev** is a web app where users can book tutors to help them progamming. Users can also sign up to become tutors.
+
+https://rentadev-caesar.herokuapp.com/
